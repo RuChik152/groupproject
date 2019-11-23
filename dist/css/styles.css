@@ -8310,11 +8310,15 @@ a {
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
-  font-size: 23px;
+  font-size: 18px;
   line-height: 27px; }
   a:hover {
     text-decoration: none;
     color: #f8f9fa; }
+
+a[href^='tel:'],
+a[href^='mailto:'] {
+  white-space: nowrap; }
 
 h6, p {
   color: #f8f9fa; }
@@ -8413,14 +8417,16 @@ footer > .container {
   height: 23px;
   padding-left: 99px;
   margin-top: 20px; }
+  .footer_item-phone a {
+    font-size: 16px; }
   .footer_item-phone img {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     margin-right: 1px;
     position: relative;
-    top: 3px;
-    left: -3px; }
+    top: 6px;
+    left: -7px; }
 
 .footer_item-icon {
   margin: auto; }
