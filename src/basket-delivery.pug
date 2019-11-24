@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        link(rel="stylesheet", href="./css/normalize.css")
+        link(rel="stylesheet", href="./css/styles.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto&display=swap")
+    body
+        .wrapper
+            //header
+            include blocks/header
+            // end header
+            section
+                .container
+                    .content
+                        .content_back_button
+                            object(data="./images/arrow.svg", type="image/svg+xml")
+                            object(data="./images/nazad.svg", type="image/svg+xml")
+                        .content_basket
+                            .content_basket_prog_menu
+                                h2 КОРЗИНА
+                                h5 
+                                    a(href="#") Сброка заказа
+                                object(data="./images/basket-arrow.svg", type="image/svg+xml")
+                                h5 Способ доставки
+                                object(data="./images/basket-arrow.svg", type="image/svg+xml")
+                                h5 Способ оплаты
+                                object(data="./images/basket-arrow.svg", type="image/svg+xml")
+                                h5 Подтверждение
+                                object(data="./images/basket-arrow.svg", type="image/svg+xml")
+                            h4 Способ доставки
+                            .content_basket_delivery
+                                input(type="radio" name="odin" checked="checked" id="vkl1")
+                                label(for="vkl1") Самовывоз
+                                input(type="radio" name="odin" id="vkl2")
+                                label(for="vkl2") Доставка
+                                .content_basket_delivery_icon-1
+                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                .content_basket_delivery_icon-2
+                                    p Lorem ipsum dolor sit amet consectetur adipisicing.
+
+            //footer
+            include blocks/footer
+            //end footer

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -8398,6 +8399,28 @@ hr {
   border: 1px solid rgba(35, 35, 35, 0.12); }
 
 /* End Header  */
+/* Вкладк на страницы выбор доставки */
+.content_basket_delivery > content_basket_delivery_icon-1, .content_basket_delivery > input {
+  display: none; }
+
+.content_basket_delivery label {
+  padding: 5px;
+  border: 1px solid #aaaaaa;
+  line-height: 28px;
+  cursor: pointer;
+  position: relative;
+  bottom: 1px;
+  background: #ffffff; }
+
+.content_basket_delivery input[type="radio"]:checked + label {
+  border-bottom: 2px solid #ffffff; }
+
+.content_basket_delivery > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+.content_basket_delivery > input:nth-of-type(2):checked ~ div:nth-of-type(2) {
+  display: block;
+  padding: 5px;
+  border: 1px solid #aaaaaa; }
+
 /* footer */
 footer {
   background-color: #353535; }
