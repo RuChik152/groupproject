@@ -8399,27 +8399,58 @@ hr {
   border: 1px solid rgba(35, 35, 35, 0.12); }
 
 /* End Header  */
+.wrappers {
+  min-height: 1600px; }
+
 /* Вкладк на страницы выбор доставки */
-.content_basket_delivery > content_basket_delivery_icon-1, .content_basket_delivery > input {
+.content_basket_delivery-tables-item p {
+  color: black; }
+
+#tab {
+  width: 1140;
+  height: 1762;
+  background-color: #E2E2E2; }
+
+#tab > input {
   display: none; }
 
-.content_basket_delivery label {
-  padding: 5px;
-  border: 1px solid #aaaaaa;
-  line-height: 28px;
+#tab > label:hover {
+  background-color: #575656; }
+
+#tab > label {
   cursor: pointer;
-  position: relative;
-  bottom: 1px;
-  background: #ffffff; }
-
-.content_basket_delivery input[type="radio"]:checked + label {
-  border-bottom: 2px solid #ffffff; }
-
-.content_basket_delivery > input:nth-of-type(1):checked ~ div:nth-of-type(1),
-.content_basket_delivery > input:nth-of-type(2):checked ~ div:nth-of-type(2) {
   display: block;
-  padding: 5px;
-  border: 1px solid #aaaaaa; }
+  background-color: #ffffff;
+  float: left;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  border: 1px solid #575656; }
+
+#table {
+  clear: both; }
+
+.content_basket_delivery-tables {
+  min-height: 1600 !important; }
+
+#table > .content_basket_delivery-tables-item {
+  background-color: #d4cbcb;
+  position: absolute;
+  width: 1140px;
+  padding: 15px;
+  overflow: hidden;
+  height: 155px;
+  border-radius: 0 5px 5px;
+  opacity: 0; }
+
+#n1:checked ~ #table > div:nth-of-type(1),
+#n2:checked ~ #table > div:nth-of-type(2) {
+  opacity: 1;
+  height: 500px; }
+
+#tab > input:checked + label {
+  color: #333333;
+  background-color: #575656; }
 
 /* footer */
 footer {

@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Document</title>
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap"
-    />
+    <link rel="stylesheet" href="./css/normalize.css"/>
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap"/>
   </head>
   <body>
     <div class="wrapper">
@@ -19,40 +16,28 @@
         <div class="topMenu">
           <div class="container d-flex just-cont-spase-bet">
             <div class="topMenu_item_1 d-flex">
-              <div class="topMenu_item_1-phone d-flex">
-                <img src="./images/phone.svg" alt="phone" />
-                <p><a href="tel:88002003000">8 800 200 3000</a></p>
+              <div class="topMenu_item_1-phone d-flex"><img src="./images/phone.svg" alt="phone"/>
+                <p> <a href="tel:88002003000">8 800 200 3000</a></p>
               </div>
-              <div class="topMenu_item_1-contact d-flex">
-                <a href="#"><img src="./images/location.svg" alt="mark"/></a>
+              <div class="topMenu_item_1-contact d-flex"><a href="#"><img src="./images/location.svg" alt="mark"/></a>
                 <p>Контакты</p>
               </div>
             </div>
-            <div class="topMenu_item_2 d-flex">
-              <a href="#"> <p>Вход</p></a><a href="#"> <p>Регистрация</p></a>
-            </div>
+            <div class="topMenu_item_2 d-flex"><a href="#">
+                <p>Вход</p></a><a href="#">
+                <p>Регистрация</p></a></div>
           </div>
         </div>
         <div class="downMenu">
           <div class="container">
             <div class="downMenu_item d-flex">
-              <div class="downMenu_item-logo">
-                <a href="#"><img src="./images/logo2.png" alt="logo"/></a>
-              </div>
-              <div class="downMenu_item-menu d-flex just-cont-spase-eve">
-                <a href="#">Каталог</a><a href="#">Акции</a
-                ><a href="#">Распродажа</a><a href="#">О нас</a>
-              </div>
-              <div class="downMenu_item-search">
-                <a href="#"><img src="./images/search.svg" alt="search"/></a
-                ><a href="./../basket.html"
-                  ><img src="./images/backet.svg" alt="basket"
-                /></a>
-              </div>
+              <div class="downMenu_item-logo"><a href="#"><img src="./images/logo2.png" alt="logo"/></a></div>
+              <div class="downMenu_item-menu d-flex just-cont-spase-eve"><a href="#">Каталог</a><a href="#">Акции</a><a href="#">Распродажа</a><a href="#">О нас</a></div>
+              <div class="downMenu_item-search"><a href="#"><img src="./images/search.svg" alt="search"/></a><a href="./../basket.html"><img src="./images/backet.svg" alt="basket"/></a></div>
             </div>
           </div>
         </div>
-        <hr class="hr" />
+        <hr class="hr"/>
       </header>
       <!-- end header-->
       <section>
@@ -63,43 +48,45 @@
               <object data="./images/nazad.svg" type="image/svg+xml"></object>
             </div>
             <div class="content_basket">
-              <div class="content_basket_prog_menu">
-                <h2>КОРЗИНА</h2>
-                <h5><a href="#">Сброка заказа</a></h5>
-                <object
-                  data="./images/basket-arrow.svg"
-                  type="image/svg+xml"
-                ></object>
+              <h2>КОРЗИНА</h2>
+              <div class="content_basket_prog_menu d-flex">
+                <h5> <a href="#">Сброка заказа</a></h5>
+                <object data="./images/basket-arrow.svg" type="image/svg+xml"></object>
                 <h5>Способ доставки</h5>
-                <object
-                  data="./images/basket-arrow.svg"
-                  type="image/svg+xml"
-                ></object>
+                <object data="./images/basket-arrow.svg" type="image/svg+xml"></object>
                 <h5>Способ оплаты</h5>
-                <object
-                  data="./images/basket-arrow.svg"
-                  type="image/svg+xml"
-                ></object>
+                <object data="./images/basket-arrow.svg" type="image/svg+xml"></object>
                 <h5>Подтверждение</h5>
-                <object
-                  data="./images/basket-arrow.svg"
-                  type="image/svg+xml"
-                ></object>
+                <object data="./images/basket-arrow.svg" type="image/svg+xml"></object>
               </div>
               <h4>Способ доставки</h4>
-              <div class="content_basket_delivery">
-                <input type="radio" name="odin" checked="checked" id="vkl1" />
-                <label for="vkl1">Самовывоз</label>
-                <input type="radio" name="odin" id="vkl2" />
-                <label for="vkl2">Доставка</label>
-                <div class="content_basket_delivery_icon-1">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  </p>
+            </div>
+            <div class="wrappers">
+              <div class="content_basket_delivery" id="tab">
+                <input type="radio" name="table" id="n1" checked="checked"/>
+                <label for="n1">Самовывоз</label>
+                <input type="radio" name="table" id="n2"/>
+                <label for="n2">Доставка</label>
+                <div class="content_basket_delivery-tables" id="table">
+                  <div class="content_basket_delivery-tables-item">
+                    <h3>Самовывоз</h3>
+                    <p>Адрес: Россия, г.Нижний Новогород, ул.Ильинская д.65,</p><span>работа склада с 8:00 - 19:00</span>
+                    <p>Дата и время</p>
+                    <input type="text" name="date" placeholder="dd/mm/year"/>
+                    <input type="text" name="time" placeholder="hh:mm"/>
+                    <h4>Кто заберет</h4>
+                    <input type="text" name="firstName" placeholder="Имя"/>
+                    <input type="text" name="lastName" placeholder="Фамилия"/>
+                    <input type="text" name="oldName" placeholder="Отчество"/>
+                  </div>
+                  <div class="content_basket_delivery-tables-item">
+                    <h3>Вкладка №2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt!</p>
+                  </div>
                 </div>
-                <div class="content_basket_delivery_icon-2">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                </div>
+              </div>
+              <div class="bloks">
+                <Lorem>ipsum dolor sit amet consectetur adipisicing elit. Ut maxime atque sunt quam ea unde incidunt. Deleniti vitae quam eveniet? Recusandae assumenda officiis eum beatae facilis ea necessitatibus alias blanditiis?</Lorem>
               </div>
             </div>
           </div>
@@ -135,17 +122,8 @@
             </div>
           </div>
           <div class="footer_item">
-            <div class="footer_item-icon d-flex just-cont-spase-eve">
-              <img src="./images/icon-facebook.svg" alt="facebook" /><img
-                src="./images/icon-instagram.svg"
-                alt="what"
-              /><img src="./images/icon-what.svg" alt="what" /><img
-                src="./images/icon-vk.svg"
-                alt="vk"
-              />
-            </div>
-            <div class="footer_item-phone d-flex">
-              <img src="./images/phone.svg" alt="phone" />
+            <div class="footer_item-icon d-flex just-cont-spase-eve"><img src="./images/icon-facebook.svg" alt="facebook"/><img src="./images/icon-instagram.svg" alt="what"/><img src="./images/icon-what.svg" alt="what"/><img src="./images/icon-vk.svg" alt="vk"/></div>
+            <div class="footer_item-phone d-flex"><img src="./images/phone.svg" alt="phone"/>
               <p><a href="tel:88002003000">8 800 200 3000</a></p>
             </div>
             <div class="footer_item-addres">

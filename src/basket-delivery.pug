@@ -20,8 +20,8 @@ html(lang="ru")
                             object(data="./images/arrow.svg", type="image/svg+xml")
                             object(data="./images/nazad.svg", type="image/svg+xml")
                         .content_basket
-                            .content_basket_prog_menu
-                                h2 КОРЗИНА
+                            h2 КОРЗИНА
+                            .content_basket_prog_menu.d-flex
                                 h5 
                                     a(href="#") Сброка заказа
                                 object(data="./images/basket-arrow.svg", type="image/svg+xml")
@@ -32,16 +32,29 @@ html(lang="ru")
                                 h5 Подтверждение
                                 object(data="./images/basket-arrow.svg", type="image/svg+xml")
                             h4 Способ доставки
-                            .content_basket_delivery
-                                input(type="radio" name="odin" checked="checked" id="vkl1")
-                                label(for="vkl1") Самовывоз
-                                input(type="radio" name="odin" id="vkl2")
-                                label(for="vkl2") Доставка
-                                .content_basket_delivery_icon-1
-                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                .content_basket_delivery_icon-2
-                                    p Lorem ipsum dolor sit amet consectetur adipisicing.
-
+                        .wrappers
+                            .content_basket_delivery(id="tab")
+                                input(type="radio" name="table" id="n1" checked)
+                                label(for="n1") Самовывоз
+                                input(type="radio" name="table" id="n2" )
+                                label(for="n2") Доставка
+                                .content_basket_delivery-tables(id="table")
+                                    .content_basket_delivery-tables-item
+                                        h3 Самовывоз
+                                        p Адрес: Россия, г.Нижний Новогород, ул.Ильинская д.65,
+                                        span работа склада с 8:00 - 19:00
+                                        p Дата и время
+                                        input(type="text" name="date" placeholder="dd/mm/year")
+                                        input(type="text" name="time" placeholder="hh:mm")
+                                        h4 Кто заберет
+                                        input(type="text" name="firstName" placeholder="Имя")
+                                        input(type="text" name="lastName" placeholder="Фамилия")
+                                        input(type="text" name="oldName" placeholder="Отчество")                                        
+                                    .content_basket_delivery-tables-item
+                                        h3 Вкладка №2
+                                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt!
+                            .bloks
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut maxime atque sunt quam ea unde incidunt. Deleniti vitae quam eveniet? Recusandae assumenda officiis eum beatae facilis ea necessitatibus alias blanditiis?
             //footer
             include blocks/footer
             //end footer
