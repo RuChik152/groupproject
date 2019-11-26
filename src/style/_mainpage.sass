@@ -1,38 +1,77 @@
+body
+    background-color: #F2F2F2
+.content_basket_prog_menu
+    a
+        color: #232323
+        border-radius: 7px
+        &:hover
+            background-color: #e6e6e6
+            border-color: #a0a0a0
+    h5
+        display: block
+        border: 2px solid #232323
+        border-radius: 7px
+        width: 171px
+        height: 54px
+        font-size: 20px
+        margin-bottom: 0px
+        text-align: center
+        padding-top: 11px
+.content_basket_prog_menu
+    margin-top: 44px
+    margin-left: 44px
+    margin-bottom: 72px
+    object
+        margin-left: 7px
+        margin-right: 10px
+
+    /* Вкладки на страницы, выбор самовывоз или доставка */
 .wrappers
-    min-height: 1600px
-/* Вкладк на страницы выбор доставки */
+    min-height: 600px
+    margin-top: 30px
 .content_basket_delivery-tables-item
     p
         color: black
 //Стили для общего блока где находятся вкладки
+.content_basket_delivery-tables
+    input
+        background: #FFFFFF
+        border: 2px solid #232323
+        box-sizing: border-box
+        border-radius: 3px
+        text-align: center
+        font-size: 17px
 #tab
     width: 1140
     height: 1762
-    background-color: #E2E2E2
 //Скрываем инпуты
 #tab>input
     display: none
 //Стили для лейблов
 #tab>label
     &:hover
-        background-color: #575656
+        background-color: #fdfdfd
+        color: #5d5c5c
 #tab>label
     cursor: pointer
     display: block
-    background-color: #ffffff
+    background-color: #efefef
     float: left
     padding: 5px 10px
     margin-right: 5px
-    border-radius: 5px
-    border: 1px solid #575656
+    border-radius: 5px 5px 0px 0px
+    border: 2px solid #e0e0e0
+    border-bottom: 0px
+    margin-bottom: 0px
+    color: #a0a0a0
 //Отменяет обтекание блока с id=table
 #table
     clear: both
 .content_basket_delivery-tables
-   min-height: 1600 !important
+    min-height: 1600 !important
 //Стили для блоков находящихся внутри лока с id=table
 #table>.content_basket_delivery-tables-item
-    background-color: #d4cbcb
+    background-color: #E2E2E2
     position: absolute
     width: 1140px
     padding: 15px
@@ -40,11 +79,82 @@
     height: 155px
     border-radius: 0 5px 5px
     opacity: 0
+    display: none
 //Стили для для блоков находящихся в локе с id=table если лейбл checked
 #n1:checked ~ #table>div:nth-of-type(1),
 #n2:checked ~ #table>div:nth-of-type(2)
     opacity: 1
     height: 500px
-#tab >input:checked + label 
+    display: block
+#tab >input:checked + label
     color: #333333
-    background-color: #575656
+    background-color: #E2E2E2
+
+.content_basket_delivery-tables-item-name
+    margin-left: 50px
+    p
+        margin-top: 29px
+    span
+        margin-left: 50px
+        color: #787676
+.content_basket_delivery-tables-item-date
+    margin-left: 50px
+    margin-top: 32px
+    input
+        margin-left: 34px
+        height: 40px
+    h5
+        margin-bottom: 0px
+        padding-top: 5px
+
+.content_basket_delivery-tables-item-whois
+    margin-top: 36px
+    margin-left: 50px
+    width: 22%
+    input
+        margin-top: 25px
+        width: 252px
+        height: 40px
+.content_basket_delivery-tables-item-btn
+    float: right
+    margin-right: 21em
+    margin-top: -4em
+    input
+        width: 295px
+        height: 66px
+        background-color: #283B40
+        color: #ffffff
+        border: none
+        font-size: 30px
+        padding-bottom: 6px
+.content_basket_delivery-tables-item-dket
+    height: 37px
+    h5
+        padding-top: 4px
+        padding-right: 7px
+        padding-left: 5px
+.content_basket_delivery-tables-item-location
+    input
+        height: 40px
+.content_back_button
+    .item-1
+        position: relative
+        bottom: 30px
+        left: 7px
+    .item-2
+        position: relative
+        bottom: 25px
+        left: 12px
+.content_back_button
+    position: relative
+    bottom: 30px
+    img
+        &:nth-child(1)
+            padding-bottom: 5px;
+            margin-left: 2px;
+            margin-right: 15px;
+            
+
+        
+        
+/* Конец, Стилей для вкладки на страницы, выбор самовывоз или доставка */

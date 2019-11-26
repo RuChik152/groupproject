@@ -17,20 +17,20 @@ html(lang="ru")
                 .container
                     .content
                         .content_back_button
-                            object(data="./images/arrow.svg", type="image/svg+xml")
-                            object(data="./images/nazad.svg", type="image/svg+xml")
+                            a(href="#")
+                                img(src="./images/arrow.svg", alt="down")
+                            img(src="./images/nazad.svg", alt="nazad")
                         .content_basket
                             h2 КОРЗИНА
                             .content_basket_prog_menu.d-flex
-                                h5 
-                                    a(href="#") Сброка заказа
+                                a(href="#")
+                                    h5 Сброка заказа
                                 object(data="./images/basket-arrow.svg", type="image/svg+xml")
                                 h5 Способ доставки
                                 object(data="./images/basket-arrow.svg", type="image/svg+xml")
                                 h5 Способ оплаты
                                 object(data="./images/basket-arrow.svg", type="image/svg+xml")
                                 h5 Подтверждение
-                                object(data="./images/basket-arrow.svg", type="image/svg+xml")
                             h4 Способ доставки
                         .wrappers
                             .content_basket_delivery(id="tab")
@@ -39,22 +39,57 @@ html(lang="ru")
                                 input(type="radio" name="table" id="n2" )
                                 label(for="n2") Доставка
                                 .content_basket_delivery-tables(id="table")
+                                    //Вкладка №1
                                     .content_basket_delivery-tables-item
-                                        h3 Самовывоз
-                                        p Адрес: Россия, г.Нижний Новогород, ул.Ильинская д.65,
-                                        span работа склада с 8:00 - 19:00
-                                        p Дата и время
-                                        input(type="text" name="date" placeholder="dd/mm/year")
-                                        input(type="text" name="time" placeholder="hh:mm")
-                                        h4 Кто заберет
-                                        input(type="text" name="firstName" placeholder="Имя")
-                                        input(type="text" name="lastName" placeholder="Фамилия")
-                                        input(type="text" name="oldName" placeholder="Отчество")                                        
+                                        .content_basket_delivery-tables-item-name
+                                            h3 Самовывоз
+                                            p Адрес: Россия, г.Нижний Новогород, ул.Ильинская д.65,
+                                                span работа склада с 8:00 - 19:00
+                                        .content_basket_delivery-tables-item-date.d-flex
+                                            h5 Дата и время :
+                                            input(type="text" name="date" placeholder="dd/mm/year")
+                                            input(type="text" name="time" placeholder="hh:mm")
+                                        .content_basket_delivery-tables-item-whois
+                                            h5 Кто заберет :
+                                            input(type="text" name="firstName" placeholder="Имя")
+                                            input(type="text" name="lastName" placeholder="Фамилия")
+                                            input(type="text" name="oldName" placeholder="Отчество")
+                                        .content_basket_delivery-tables-item-btn
+                                            input(type="submit" value="Далее")                                            
+                                    //Вкладка №2
                                     .content_basket_delivery-tables-item
-                                        h3 Вкладка №2
-                                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt!
-                            .bloks
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut maxime atque sunt quam ea unde incidunt. Deleniti vitae quam eveniet? Recusandae assumenda officiis eum beatae facilis ea necessitatibus alias blanditiis?
+                                        .content_basket_delivery-tables-item-name
+                                            h3 Доставка
+                                        .content_basket_delivery-tables-item-wrapper.d-flex
+                                            .content_basket_delivery-tables-item-whois.m-right-60
+                                                h5 Кто заберет :
+                                                input(type="text" name="firstName" placeholder="Имя")
+                                                input(type="text" name="lastName" placeholder="Фамилия")
+                                                input(type="text" name="number" placeholder="Номер телефона")
+                                                input(type="text" name="dopnumber" placeholder="Доп.номер")
+                                            .content_basket_delivery-tables-item-location.m-right-60.m-top-60
+                                                .content_basket_delivery-tables-item-city
+                                                    h5  Город:
+                                                    input(type="text" name="city")
+                                                .content_basket_delivery-tables-item-street
+                                                    h5 Улица:
+                                                    input(type="text" name="street")
+                                            .content_basket_delivery-tables-item-dket.m-right-60.m-top-60.d-flex
+                                                .content_basket_delivery-tables-item-dom.d-flex
+                                                    h5 Доп:
+                                                    input(type="text" name="dom").width-50.height-36
+                                                .content_basket_delivery-tables-item-dom.d-flex
+                                                    h5 Корп:
+                                                    input(type="text" name="korp" ).width-50.height-36
+                                                .content_basket_delivery-tables-item-dom.d-flex
+                                                    h5 Этаж:
+                                                    input(type="text" name="etag" ).width-50.height-36
+                                                .content_basket_delivery-tables-item-dom.d-flex
+                                                    h5 Квартира:
+                                                    input(type="text" name="kvr" ).width-50.height-36
+
+                                        .content_basket_delivery-tables-item-btn
+                                            input(type="submit" value="Далее")   
             //footer
             include blocks/footer
             //end footer
