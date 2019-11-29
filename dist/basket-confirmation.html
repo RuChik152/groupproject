@@ -50,28 +50,38 @@
                 <h5>Сброка заказа</h5></a>
               <object data="./images/basket-arrow.svg" type="image/svg+xml"></object><a href="basket-delivery.html">
                 <h5>Способ доставки</h5></a>
-              <object data="./images/basket-arrow.svg" type="image/svg+xml"></object>
-              <h5>Способ оплаты</h5>
+              <object data="./images/basket-arrow.svg" type="image/svg+xml"></object><a href="basket-pay.html">
+                <h5>Способ оплаты</h5></a>
               <object data="./images/basket-arrow.svg" type="image/svg+xml"></object>
               <h5>Подтверждение</h5>
             </div>
-            <h4>Выберите способ оплаты</h4>
-            <div class="content_basket_pay">
-              <input type="radio" name="pays" id="pay1"/>
-              <label for="pay1">Наличными или банковской картой</label>
-              <input type="radio" name="pays" id="pay2"/>
-              <label for="pay2">На сайте картой (онлайн)</label>
-              <input type="radio" name="pays" id="pay3"/>
-              <label for="pay3">Яндекс.Деньги</label>
-              <input type="radio" name="pays" id="pay4"/>
-              <label for="pay4">WebMoney</label>
-              <input type="radio" name="pays" id="pay5"/>
-              <label for="pay5">Qiwi wallet</label>
-              <input type="radio" name="pays" id="pay6"/>
-              <label for="pay6">Банковский перевод Юр. лица</label>
-            </div>
-            <div class="content_basket_delivery-tables-item-btn down-btn">
-              <input class="button" type="submit" value="Далее" onclick="location.href='basket-confirmation.html'"/>
+            <div class="content_basket_conform">
+              <div class="content_basket_conform_total d-flex just-cont-spase-bet">
+                <div class="content_basket_conform_total-count">
+                  <p>2 позиции</p>
+                </div>
+                <div class="content_basket_conform_total-sum">
+                  <p>К оплате <span>1590</span><img src="./images/rub.svg" alt="rub"/></p>
+                </div>
+              </div>
+              <hr class="hr-basket"/>
+              <div class="content_basket_conform_price">
+                <div class="content_basket_conform_price_product-item d-flex just-cont-spase-bet"><a href="#">Сковорода Tefal Tempo 24 см</a>
+                  <p>1 шт</p>
+                  <div class="content_basket_conform_price_product-item1_sum d-flex just-cont-spase-bet">
+                    <p>790</p><img src="./images/rub.svg" alt="rub"/>
+                  </div>
+                </div>
+                <div class="content_basket_conform_price_product-item d-flex just-cont-spase-bet"><a href="#">Сковорода для блинов Tefal MINUTE 22 см</a>
+                  <p>1 шт</p>
+                  <div class="content_basket_conform_price_product-item2_sum d-flex just-cont-spase-bet">
+                    <p>790</p><img src="./images/rub.svg" alt="rub"/>
+                  </div>
+                </div>
+              </div>
+              <div class="content_basket_delivery-tables-item-btn conf">
+                <input class="button" type="submit" value="Далее"/>
+              </div>
             </div>
           </div>
         </div>

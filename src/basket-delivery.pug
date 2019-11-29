@@ -17,13 +17,13 @@ html(lang="ru")
                 .container
                     .content
                         .content_back_button
-                            a(href="#")
+                            a(href="basket-rebate.html")
                                 img(src="./images/arrow.svg", alt="down")
                             img(src="./images/nazad.svg", alt="nazad")
                         .content_basket
                             h2 КОРЗИНА
                             .content_basket_prog_menu.d-flex
-                                a(href="#")
+                                a(href="basket-rebate.html")
                                     h5 Сброка заказа
                                 object(data="./images/basket-arrow.svg", type="image/svg+xml")
                                 h5 Способ доставки
@@ -55,7 +55,7 @@ html(lang="ru")
                                             input(type="text" name="lastName" placeholder="Фамилия")
                                             input(type="text" name="oldName" placeholder="Отчество")
                                         .content_basket_delivery-tables-item-btn
-                                            input(type="submit" value="Далее" class="button")                                            
+                                            input(type="submit" value="Далее" class="button" onclick="location.href='basket-pay.html'")                                            
                                     //Вкладка №2
                                     .content_basket_delivery-tables-item
                                         .content_basket_delivery-tables-item-name
@@ -89,7 +89,7 @@ html(lang="ru")
                                                     input(type="text" name="kvr" ).width-50.height-36
 
                                         .content_basket_delivery-tables-item-btn
-                                            input(type="submit" value="Далее" class="button")   
+                                            input(type="submit" value="Далее" class="button" onclick="location.href='basket-pay.html'")   
             //footer
             include blocks/footer
             //end footer

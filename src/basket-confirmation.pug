@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="./css/normalize.css")
+        link(rel="stylesheet", href="./css/styles.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto&display=swap")
+        title Document
+    body
+            //header
+            include blocks/header
+            // end header
+            //content
+
+            section
+                .container
+                    .content
+                        .content_back_button
+                            a(href="basket-delivery.html")
+                                img(src="./images/arrow.svg", alt="down")
+                            img(src="./images/nazad.svg", alt="nazad")
+                        .content_basket
+                            h2 КОРЗИНА
+                            .content_basket_prog_menu.d-flex
+                                a(href="basket-rebate.html")
+                                    h5 Сброка заказа
+                                object(data="./images/basket-arrow.svg", type="image/svg+xml")
+                                a(href="basket-delivery.html")
+                                    h5 Способ доставки
+                                object(data="./images/basket-arrow.svg", type="image/svg+xml")
+                                a(href="basket-pay.html")
+                                    h5 Способ оплаты
+                                object(data="./images/basket-arrow.svg", type="image/svg+xml")
+                                h5 Подтверждение
+                            .content_basket_conform
+                                .content_basket_conform_total.d-flex.just-cont-spase-bet
+                                    .content_basket_conform_total-count
+                                        p 2 позиции
+                                    .content_basket_conform_total-sum
+                                        p К оплате 
+                                            span 1590
+                                            img(src="./images/rub.svg", alt="rub")
+                                hr.hr-basket
+                                .content_basket_conform_price
+                                    .content_basket_conform_price_product-item.d-flex.just-cont-spase-bet
+                                        a(href="#") Сковорода Tefal Tempo 24 см
+                                        p 1 шт
+                                        .content_basket_conform_price_product-item1_sum.d-flex.just-cont-spase-bet
+                                            p 790
+                                            img(src="./images/rub.svg", alt="rub")
+                                    .content_basket_conform_price_product-item.d-flex.just-cont-spase-bet
+                                        a(href="#") Сковорода для блинов Tefal MINUTE 22 см
+                                        p 1 шт
+                                        .content_basket_conform_price_product-item2_sum.d-flex.just-cont-spase-bet
+                                            p 790
+                                            img(src="./images/rub.svg", alt="rub")
+
+                                .content_basket_delivery-tables-item-btn.conf
+                                    input(type="submit" value="Далее" class="button")
+            //end content
+            //footer
+            include blocks/footer
+            //end footer

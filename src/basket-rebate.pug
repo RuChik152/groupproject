@@ -34,9 +34,8 @@ html(lang="ru")
                                 h5 Подтверждение
                             .content_basket_panel.d-flex
                                 .content_basket_panel_rectangle.d-flex.just-cont-spase-bet
-                                    img(src="#", alt="checkbox")
+                                    img(src="./images/chk.svg", alt="checkbox")
                                     p Количество
-                                    <input type="text" name="sumOut" disabled="false" value="">
                                 h2 Общая сумма заказа
                             .content_basket_panel_item_panel.d-flex
                                 .content_basket_panel_block-left
@@ -76,9 +75,9 @@ html(lang="ru")
                                     .content_basket_panel_block-right_sum.d-flex
                                         h4 1580
                                         img(src="./images/rub.svg")
-                                    input(type="submit" value="ОФОРМИТЬ ЗАКАЗ")
+                                    input(type="submit" value="ОФОРМИТЬ ЗАКАЗ" onclick="location.href='basket-delivery.html'")
             //end content
-
+            
             //footer
             include blocks/footer
             //end footer
