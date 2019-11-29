@@ -53,6 +53,19 @@ li
 
 img
     vertical-align: initial;
+input[type="checkbox"]:checked + label:before
+    background-color: #4c4c4c
 
-
+input[type="checkbox"]
+    display: none
+[type="checkbox"]
+    box-sizing: border-box
+input[type="checkbox"] + label:before
+    content: ""
+    width: 24px
+    height: 24px
+    display: block
+    box-shadow: 0 0 0 1px #bfbfbf
+    border: 4px solid #fff
+    border-radius: 50%
 /* End main style */

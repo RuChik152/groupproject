@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        link(rel="stylesheet", href="./css/normalize.css")
+        link(rel="stylesheet", href="./css/styles.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto&display=swap")
+    body
+        .wrapper
+            //header
+            include blocks/header
+            // end header
+
+            //content
+            section
+                .container
+                    .content
+                        .content_back_button
+                            a(href="#")
+                                img(src="./images/arrow.svg", alt="down")
+                            img(src="./images/nazad.svg", alt="nazad")
+                        .content_basket
+                            h2 КОРЗИНА
+                            .content_basket_prog_menu.d-flex
+                                h5 Сброка заказа
+                                object(data="./images/basket-arrow.svg", type="image/svg+xml")
+                                h5 Способ доставки
+                                object(data="./images/basket-arrow.svg", type="image/svg+xml")
+                                h5 Способ оплаты
+                                object(data="./images/basket-arrow.svg", type="image/svg+xml")
+                                h5 Подтверждение
+                            .content_basket_panel.d-flex
+                                .content_basket_panel_rectangle.d-flex.just-cont-spase-bet
+                                    img(src="#", alt="checkbox")
+                                    p Количество
+                                    <input type="text" name="sumOut" disabled="false" value="">
+                                h2 Общая сумма заказа
+                            .content_basket_panel_item_panel.d-flex
+                                .content_basket_panel_block-left
+                                    //Товар №1
+                                    .content_basket_selected-item.d-flex
+                                        input(type="checkbox" id="checkbox1")
+                                        label(for="checkbox1").d-flex
+                                        img(src="./images/item/dsc_2114_01_1 1.png", alt="item")
+                                        .content_basket_selected-item_description-item
+                                            a(href="#") Сковородка Tefal Tempo 24 сумма
+                                            p Стильная посуда с антипригарным покрытием Easy Plus
+                                        .content_basket_selected-item_quantity.d-flex
+                                            input(type="text" name="quantity" value="1" id="r1")
+                                            p шт.
+                                        .content_basket_selected-item_price.d-flex
+                                            p 790
+                                            img(src="./images/rub.svg", alt="rub" class="btn-delet")
+                                        input(type="submit" value="удалить" class="delete")
+                                    //Товар №1 конец
+                                    //Товар №2
+                                    .content_basket_selected-item.d-flex
+                                        input(type="checkbox" id="checkbox2")
+                                        label(for="checkbox2").d-flex
+                                        img(src="./images/item/tefal_nice_blinnay_04005722_22_sm_562569_1035894_1 1 (1).png", alt="item")
+                                        .content_basket_selected-item_description-item
+                                            a(href="#") Сковорода для блинов Tefal MINUTE 22 см
+                                            p Стильная посуда с антипригарным покрытием Easy Plus
+                                        .content_basket_selected-item_quantity.d-flex
+                                            input(type="text" name="quantity" value="1" id="r2")
+                                            p шт.
+                                        .content_basket_selected-item_price.d-flex
+                                            p 790
+                                            img(src="./images/rub.svg", alt="rub" class="btn-delet")
+                                        input(type="submit" value="удалить" class="delete")
+                                    //Товар №2 конец
+                                .content_basket_panel_block-right
+                                    .content_basket_panel_block-right_sum.d-flex
+                                        h4 1580
+                                        img(src="./images/rub.svg")
+                                    input(type="submit" value="ОФОРМИТЬ ЗАКАЗ")
+            <input type="button" onclick="sums()" value="Подсчитать">
+            //end content
+
+            //footer
+            include blocks/footer
+            //end footer

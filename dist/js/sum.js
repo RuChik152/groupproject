@@ -1,0 +1,1 @@
+function sums(){for(sum=0,i=1;i<2;i++){var u=document.getElementById("r"+i);u&&(sum+=parseInt(u.value))}dicument.formText.sumOut.value=sum}

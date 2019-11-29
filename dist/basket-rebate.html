@@ -40,14 +40,15 @@
         <hr class="hr"/>
       </header>
       <!-- end header-->
+      <!--content-->
       <section>
         <div class="container">
           <div class="content">
             <div class="content_back_button"><a href="#"><img src="./images/arrow.svg" alt="down"/></a><img src="./images/nazad.svg" alt="nazad"/></div>
             <div class="content_basket">
               <h2>КОРЗИНА</h2>
-              <div class="content_basket_prog_menu d-flex"><a href="#">
-                  <h5>Сброка заказа</h5></a>
+              <div class="content_basket_prog_menu d-flex">
+                <h5>Сброка заказа</h5>
                 <object data="./images/basket-arrow.svg" type="image/svg+xml"></object>
                 <h5>Способ доставки</h5>
                 <object data="./images/basket-arrow.svg" type="image/svg+xml"></object>
@@ -55,88 +56,61 @@
                 <object data="./images/basket-arrow.svg" type="image/svg+xml"></object>
                 <h5>Подтверждение</h5>
               </div>
-              <h4>Способ доставки</h4>
-            </div>
-            <div class="wrappers">
-              <div class="content_basket_delivery" id="tab">
-                <input type="radio" name="table" id="n1" checked="checked"/>
-                <label for="n1">Самовывоз</label>
-                <input type="radio" name="table" id="n2"/>
-                <label for="n2">Доставка</label>
-                <div class="content_basket_delivery-tables" id="table">
-                  <!--Вкладка №1-->
-                  <div class="content_basket_delivery-tables-item">
-                    <div class="content_basket_delivery-tables-item-name">
-                      <h3>Самовывоз</h3>
-                      <p>Адрес: Россия, г.Нижний Новогород, ул.Ильинская д.65,<span>работа склада с 8:00 - 19:00</span></p>
+              <div class="content_basket_panel d-flex">
+                <div class="content_basket_panel_rectangle d-flex just-cont-spase-bet"><img src="#" alt="checkbox"/>
+                  <p>Количество</p><input type="text" name="sumOut" disabled="false" value="">
+                </div>
+                <h2>Общая сумма заказа</h2>
+              </div>
+              <div class="content_basket_panel_item_panel d-flex">
+                <div class="content_basket_panel_block-left">
+                  <!--Товар №1-->
+                  <div class="content_basket_selected-item d-flex">
+                    <input type="checkbox" id="checkbox1"/>
+                    <label class="d-flex" for="checkbox1"></label><img src="./images/item/dsc_2114_01_1 1.png" alt="item"/>
+                    <div class="content_basket_selected-item_description-item"><a href="#">Сковородка Tefal Tempo 24 сумма</a>
+                      <p>Стильная посуда с антипригарным покрытием Easy Plus</p>
                     </div>
-                    <div class="content_basket_delivery-tables-item-date d-flex">
-                      <h5>Дата и время :</h5>
-                      <input type="text" name="date" placeholder="dd/mm/year"/>
-                      <input type="text" name="time" placeholder="hh:mm"/>
+                    <div class="content_basket_selected-item_quantity d-flex">
+                      <input type="text" name="quantity" value="1" id="r1"/>
+                      <p>шт.</p>
                     </div>
-                    <div class="content_basket_delivery-tables-item-whois">
-                      <h5>Кто заберет :</h5>
-                      <input type="text" name="firstName" placeholder="Имя"/>
-                      <input type="text" name="lastName" placeholder="Фамилия"/>
-                      <input type="text" name="oldName" placeholder="Отчество"/>
+                    <div class="content_basket_selected-item_price d-flex">
+                      <p>790</p><img class="btn-delet" src="./images/rub.svg" alt="rub"/>
                     </div>
-                    <div class="content_basket_delivery-tables-item-btn">
-                      <input class="button" type="submit" value="Далее"/>
-                    </div>
+                    <input class="delete" type="submit" value="удалить"/>
                   </div>
-                  <!--Вкладка №2-->
-                  <div class="content_basket_delivery-tables-item">
-                    <div class="content_basket_delivery-tables-item-name">
-                      <h3>Доставка</h3>
+                  <!--Товар №1 конец-->
+                  <!--Товар №2-->
+                  <div class="content_basket_selected-item d-flex">
+                    <input type="checkbox" id="checkbox2"/>
+                    <label class="d-flex" for="checkbox2"></label><img src="./images/item/tefal_nice_blinnay_04005722_22_sm_562569_1035894_1 1 (1).png" alt="item"/>
+                    <div class="content_basket_selected-item_description-item"><a href="#">Сковорода для блинов Tefal MINUTE 22 см</a>
+                      <p>Стильная посуда с антипригарным покрытием Easy Plus</p>
                     </div>
-                    <div class="content_basket_delivery-tables-item-wrapper d-flex">
-                      <div class="content_basket_delivery-tables-item-whois m-right-60">
-                        <h5>Кто заберет :</h5>
-                        <input type="text" name="firstName" placeholder="Имя"/>
-                        <input type="text" name="lastName" placeholder="Фамилия"/>
-                        <input type="text" name="number" placeholder="Номер телефона"/>
-                        <input type="text" name="dopnumber" placeholder="Доп.номер"/>
-                      </div>
-                      <div class="content_basket_delivery-tables-item-location m-right-60 m-top-60">
-                        <div class="content_basket_delivery-tables-item-city">
-                          <h5> Город:</h5>
-                          <input type="text" name="city"/>
-                        </div>
-                        <div class="content_basket_delivery-tables-item-street">
-                          <h5>Улица:</h5>
-                          <input type="text" name="street"/>
-                        </div>
-                      </div>
-                      <div class="content_basket_delivery-tables-item-dket m-right-60 m-top-60 d-flex">
-                        <div class="content_basket_delivery-tables-item-dom d-flex">
-                          <h5>Доп:</h5>
-                          <input class="width-50 height-36" type="text" name="dom"/>
-                        </div>
-                        <div class="content_basket_delivery-tables-item-dom d-flex">
-                          <h5>Корп:</h5>
-                          <input class="width-50 height-36" type="text" name="korp"/>
-                        </div>
-                        <div class="content_basket_delivery-tables-item-dom d-flex">
-                          <h5>Этаж:</h5>
-                          <input class="width-50 height-36" type="text" name="etag"/>
-                        </div>
-                        <div class="content_basket_delivery-tables-item-dom d-flex">
-                          <h5>Квартира:</h5>
-                          <input class="width-50 height-36" type="text" name="kvr"/>
-                        </div>
-                      </div>
+                    <div class="content_basket_selected-item_quantity d-flex">
+                      <input type="text" name="quantity" value="1" id="r2"/>
+                      <p>шт.</p>
                     </div>
-                    <div class="content_basket_delivery-tables-item-btn">
-                      <input class="button" type="submit" value="Далее"/>
+                    <div class="content_basket_selected-item_price d-flex">
+                      <p>790</p><img class="btn-delet" src="./images/rub.svg" alt="rub"/>
                     </div>
+                    <input class="delete" type="submit" value="удалить"/>
                   </div>
+                  <!--Товар №2 конец-->
+                </div>
+                <div class="content_basket_panel_block-right">
+                  <div class="content_basket_panel_block-right_sum d-flex">
+                    <h4>1580</h4><img src="./images/rub.svg"/>
+                  </div>
+                  <input type="submit" value="ОФОРМИТЬ ЗАКАЗ"/>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section><input type="button" onclick="sums()" value="Подсчитать">
+      <!--end content-->
       <!--footer-->
       <footer>
         <div class="container d-flex just-cont-spase-bet">
