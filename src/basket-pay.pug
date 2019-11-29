@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="./css/normalize.css")
+        link(rel="stylesheet", href="./css/styles.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto&display=swap")
+        title Document
+    body
+
+            //header
+            include blocks/header
+            // end header
+            //content
+            section
+                .container
+                    .content
+                        .content_back_button
+                            a(href="#")
+                                img(src="./images/arrow.svg", alt="down")
+                            img(src="./images/nazad.svg", alt="nazad")
+                        .content_basket
+                            h2 КОРЗИНА
+                            .content_basket_prog_menu.d-flex
+                                a(href="#")
+                                    h5 Сброка заказа
+                                object(data="./images/basket-arrow.svg", type="image/svg+xml")
+                                h5 Способ доставки
+                                object(data="./images/basket-arrow.svg", type="image/svg+xml")
+                                h5 Способ оплаты
+                                object(data="./images/basket-arrow.svg", type="image/svg+xml")
+                                h5 Подтверждение
+                            h4 Выберите способ оплаты
+                            .content_basket_pay
+                                input(type="radio" name="pays" id="pay1")
+                                label(for="pay1") Наличными или банковской картой
+                                input(type="radio" name="pays" id="pay2")
+                                label(for="pay2") На сайте картой (онлайн)
+                                input(type="radio" name="pays" id="pay3")
+                                label(for="pay3") Яндекс.Деньги
+                                input(type="radio" name="pays" id="pay4")
+                                label(for="pay4") WebMoney
+                                input(type="radio" name="pays" id="pay5")
+                                label(for="pay5") Qiwi wallet
+                                input(type="radio" name="pays" id="pay6")
+                                label(for="pay6") Банковский перевод Юр. лица     
+            //end content
+            //footer
+            include blocks/footer
+            //end footer
