@@ -1,1 +1,24 @@
-function openDelivery(e,t){var a,l,n;for(l=document.getElementsByClassName("tabcontent"),a=0;a<l.length;a++)l[a].style.display="none";for(n=document.getElementsByClassName("tablinks"),a=0;a<n.length;a++)n[a].className=n[a].className.replace(" active","");document.getElementById(t).style.display="block",e.currentTarget.className+=" active"}
+$(function() {
+    //карусель отзывов
+    $('.js-reviews-carousel').slick({
+        dots: true, 
+        arrows: true, 
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        adaptiveHeight: true,
+        responsive: [
+            {
+              breakpoint: 1000,
+              settings: {
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            }
+        ]
+    });
+    $('.multiple-items').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+});
