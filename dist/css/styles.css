@@ -9054,8 +9054,6 @@ footer {
       position: relative;
       top: 6px;
       left: -7px; }
-  footer .footer_item-icon {
-    margin: auto; }
   footer .footer_item-addres {
     text-align: end;
     margin-top: 13px; }
@@ -9075,5 +9073,15 @@ footer > .container {
   padding-top: 19px; }
   footer > .container .footer_item-list {
     padding-left: 2px; }
+
+.footer_item-icon img {
+  width: 20px;
+  height: 20px; }
+
+.footer_item-phone img {
+  width: 15px; }
+
+.footer_item-icon p {
+  text-align: end; }
 
 /* end footer */
