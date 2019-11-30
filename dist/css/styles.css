@@ -8383,6 +8383,9 @@ hr.hr-basket {
 /*  Header  */
 header {
   height: 285px; }
+  header .downMenu_item-search img {
+    width: 33px;
+    height: 28px; }
   header .topMenu {
     background-color: #353535;
     height: 64px;
@@ -8400,41 +8403,36 @@ header {
       height: 26px; }
     header .topMenu .topMenu_item_1-contact p {
       margin-left: 16px; }
+  header .topMenu_item_2 p:first-child {
+    margin-right: 61px; }
+  header .downMenu_item-menu {
+    width: 74%;
+    height: 2em;
+    margin-top: 69px;
+    margin-left: -26px; }
+    header .downMenu_item-menu a {
+      color: #232323;
+      margin: 0 -87px; }
+  header .downMenu_item-search a:first-child {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    top: 71px;
+    right: 38px; }
+  header .downMenu_item-search a:last-child {
+    position: relative;
+    width: 26px;
+    height: 27.18px;
+    top: 72px;
+    left: 34px; }
+  header hr {
+    width: 1300px;
+    border: 1px solid rgba(35, 35, 35, 0.12); }
 
 header > .topMenu > .container {
   padding-top: 17px;
   padding-left: 0px;
   padding-right: 0px; }
-
-.topMenu_item_2 p:first-child {
-  margin-right: 61px; }
-
-.downMenu_item-menu {
-  width: 74%;
-  height: 2em;
-  margin-top: 69px;
-  margin-left: -26px; }
-  .downMenu_item-menu a {
-    color: #232323;
-    margin: 0 -87px; }
-
-.downMenu_item-search a:first-child {
-  position: relative;
-  width: 26px;
-  height: 26px;
-  top: 71px;
-  right: 38px; }
-
-.downMenu_item-search a:last-child {
-  position: relative;
-  width: 26px;
-  height: 27.18px;
-  top: 72px;
-  left: 34px; }
-
-hr {
-  width: 1300px;
-  border: 1px solid rgba(35, 35, 35, 0.12); }
 
 /* End Header  */
 body {
