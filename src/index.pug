@@ -95,37 +95,22 @@ html(lang="ru")
       .news.center
         h2 НОВИНКИ
         .newItem
-            .block
-                img(src='images/skovorodka.svg', alt='')
-                p Сковорода-гриль с антипригарным покрытием, 28х28 см
-                button.buttonOne В КОРЗИНУ
-            .block
-                img(src='images/protiven.svg', alt='')
-                p
-                | PYREX Набор для запекания 2 предмета (противень Asimetria 35*27см+форма стеклянная 35*22см) AS35RR0/248BN
-                button.buttonTwo В КОРЗИНУ
-            .block
-                img(src='images/castrula.svg', alt='')
-                p Кастрюля со стеклянной крышкой VITALITY, индукция, 4л
-                button.buttonOne В КОРЗИНУ
-script(type='text/javascript').
-    $(function() {
-        //карусель отзывов
-        $('.multiple-items').slick({
-            infinite: true,
-            dots: false,
-            //autoplay: true,
-            //autoplaySpeed: 2500,
-            slidesToShow: 3,
-            slidesToScroll: 1
-    });
-    });
-script(type='text/javascript').
-    $(function() {
-    $('.single-item').slick();
-    });
-            
-      //end content
-      //footer
-      include blocks/footer
-      //end footer
+          .block
+            img(src='images/skovorodka.svg', alt='')
+            p Сковорода-гриль с антипригарным покрытием, 28х28 см
+            button.buttonOne В КОРЗИНУ
+          .block
+            img(src='images/protiven.svg', alt='')
+            p
+            | PYREX Набор для запекания 2 предмета (противень Asimetria 35*27см+форма стеклянная 35*22см) AS35RR0/248BN
+            button.buttonTwo В КОРЗИНУ
+          .block
+            img(src='images/castrula.svg', alt='')
+            p Кастрюля со стеклянной крышкой VITALITY, индукция, 4л
+            button.buttonOne В КОРЗИНУ
+
+
+        //end content
+        //footer
+        include blocks/footer
+        //end footer

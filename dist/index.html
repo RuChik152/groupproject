@@ -145,30 +145,75 @@
             <button class="buttonOne">В КОРЗИНУ</button>
           </div>
         </div>
+        <!--end content-->
+        <!--footer-->
+        <footer>
+          <div class="container d-flex just-cont-spase-bet">
+            <div class="footer_item d-flex just-cont-spase-bet">
+              <div class="footer_item-compani m-left-40">
+                <h6>Компания</h6>
+                <ul class="footer_item-list">
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="#">Вакансии</a></li>
+                  <li><a href="#">Акции</a></li>
+                </ul>
+              </div>
+              <div class="footer_item-info m-left-40">
+                <h6>Информация</h6>
+                <ul class="footer_item-list">
+                  <li><a href="#">Условия оплаты</a></li>
+                  <li><a href="#">Условия доставки</a></li>
+                  <li><a href="#">Возврат товара</a></li>
+                </ul>
+              </div>
+              <div class="footer_item-programs m-left-40">
+                <h6>Программа лояльности</h6>
+                <ul class="footer_item-list">
+                  <li><a href="#">Подарочные карты</a></li>
+                  <li><a href="#">Обучение</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer_item">
+              <div class="footer_item-icon d-flex just-cont-spase-eve"><img src="./images/icon-facebook.svg" alt="facebook"/><img src="./images/icon-instagram.svg" alt="what"/><img src="./images/icon-what.svg" alt="what"/><img src="./images/icon-vk.svg" alt="vk"/></div>
+              <div class="footer_item-phone d-flex"><img src="./images/phone.svg" alt="phone"/>
+                <p><a href="tel:88002003000">8 800 200 3000</a></p>
+              </div>
+              <div class="footer_item-addres">
+                <p>г.Нижний новгород,</p>
+                <p>ул.Петрова д.38, БЦ "Богемия"</p>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>made in Comanda A</p>
+            <p>2019 год</p>
+          </div>
+        </footer>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/slick/slick.min.js"></script>
+        <script type="text/javascript">
+          $(function() {
+            //карусель отзывов
+            $('.multiple-items').slick({
+              infinite: true,
+              dots: false,
+              //autoplay: true,
+              //autoplaySpeed: 2500,
+              slidesToShow: 3,
+              slidesToScroll: 1
+          });
+          });
+        </script>
+        <script type="text/javascript">
+          $(function() {
+          $('.single-item').slick();
+          });
+        </script>
+        <!--end footer-->
       </div>
     </div>
   </body>
 </html>
-<script type="text/javascript">
-  $(function() {
-      //карусель отзывов
-      $('.multiple-items').slick({
-          infinite: true,
-          dots: false,
-          //autoplay: true,
-          //autoplaySpeed: 2500,
-          slidesToShow: 3,
-          slidesToScroll: 1
-  });
-  });
-</script>
-<script type="text/javascript">
-  $(function() {
-  $('.single-item').slick();
-  });
-          
-    //end content
-    //footer
-    include blocks/footer
-    //end footer
-</script>

@@ -156,10 +156,27 @@
           <p>2019 год</p>
         </div>
       </footer>
-      <script src="../js/jquery-3.4.1.min.js"></script>
       <script src="js/jquery-3.2.1.min.js"></script>
       <script src="js/jquery.easing.1.3.js"></script>
       <script src="js/slick/slick.min.js"></script>
+      <script type="text/javascript">
+        $(function() {
+          //карусель отзывов
+          $('.multiple-items').slick({
+            infinite: true,
+            dots: false,
+            //autoplay: true,
+            //autoplaySpeed: 2500,
+            slidesToShow: 3,
+            slidesToScroll: 1
+        });
+        });
+      </script>
+      <script type="text/javascript">
+        $(function() {
+        $('.single-item').slick();
+        });
+      </script>
       <!--end footer-->
     </div>
   </body>
