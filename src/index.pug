@@ -1,21 +1,131 @@
 <!DOCTYPE html>
 html(lang="ru")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Document
-        link(rel="stylesheet", href="./css/normalize.css")
-        link(rel="stylesheet", href="./css/styles.css")
-        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto&display=swap")
-    body
-        .wrapper
-            //header
-            include blocks/header
-            // end header
-            //content
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+    link(rel="stylesheet", href="./css/normalize.css")
+    link(rel="stylesheet", href="./css/styles.css")
+    link(rel='stylesheet', type='text/css', href='js/slick/slick.css')
+    link(rel='stylesheet', type='text/css', href='js/slick/slick-theme.css')
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto&display=swap")
+  body
+    .wrapper
+      //header
+      include blocks/header
+      // end header
+      //content
+      .index-blocks
+        .center
+          .single-item.center
+            .review1
+              img(src='images/grand.svg', alt='')
+            .review1
+              img(src='images/tNedel.svg', alt='')
+            .review1
+              img(src='images/NG.svg', alt='', width='1170px', height='670px')
+          .wrap
+            h2 Распродажа
+            .multiple-items.center
+              .review
+                img(src='images/tarelka.svg', alt='')
+                div
+                  p Бульонница Дымка, 510мл
+                  p.tysklo
+                    s 45 руб
+                    | - 5%
+                  p 40 руб
+                .btn
+                  button В КОРЗИНУ
+              .review
+                img(src='images/whiteTarelka.svg', alt='')
+                div
+                  p
+                    | Бульонница Скандинавские узоры,
+                    br
+                    |  13 см
+                  p.tysklo
+                    s 70 руб
+                    |  -14%
+                  p 60 руб
+                .btn5
+                  button В КОРЗИНУ
+              .review
+                img(src='images/varka.svg', alt='')
+                div
+                  p Мультиварка S50404 Servitta, 5л
+                  p.tysklo
+                    s 3500 руб
+                    |  -25%
+                  p 3000 руб
+                .btn
+                  button В КОРЗИНУ
+              .review
+                img(src='images/turka.svg', alt='')
+                div
+                  p ТУРКА С ДЕР/РУЧКОЙ ДЕКОР ГЛАЗУР ИВ-5227
+                  p.tysklo
+                    s 600 руб
+                    |  -50%
+                  p 300 руб
+                .btn1
+                  button В КОРЗИНУ
+              .review
+                img(src='images/shaker.svg', alt='')
+                div
+                  p Шейкер дл я смешивания коктейля Fackelmann, 8.2х21.5см, стекло
+                  p.tysklo
+                    | <
+                    s 550 руб
+                    |  -9%
+                  p 500 руб
+                .btn2
+                  button В КОРЗИНУ
+              .review
+                img(src='images/blackSkovorodka.svg', alt='')
+                div
+                  p Сковорода Rustica Esprado 26*6,8см, кованого алюминия QuanTanium
+                  p.tysklo
+                    s 1998 руб
+                    |  -25%
+                  p 1449 руб
+                .btn3
+                  button В КОРЗИНУ
+      .news.center
+        h2 НОВИНКИ
+        .newItem
+            .block
+                img(src='images/skovorodka.svg', alt='')
+                p Сковорода-гриль с антипригарным покрытием, 28х28 см
+                button.buttonOne В КОРЗИНУ
+            .block
+                img(src='images/protiven.svg', alt='')
+                p
+                | PYREX Набор для запекания 2 предмета (противень Asimetria 35*27см+форма стеклянная 35*22см) AS35RR0/248BN
+                button.buttonTwo В КОРЗИНУ
+            .block
+                img(src='images/castrula.svg', alt='')
+                p Кастрюля со стеклянной крышкой VITALITY, индукция, 4л
+                button.buttonOne В КОРЗИНУ
+script(type='text/javascript').
+    $(function() {
+        //карусель отзывов
+        $('.multiple-items').slick({
+            infinite: true,
+            dots: false,
+            //autoplay: true,
+            //autoplaySpeed: 2500,
+            slidesToShow: 3,
+            slidesToScroll: 1
+    });
+    });
+script(type='text/javascript').
+    $(function() {
+    $('.single-item').slick();
+    });
             
-            //end content
-            //footer
-            include blocks/footer
-            //end footer
+      //end content
+      //footer
+      include blocks/footer
+      //end footer

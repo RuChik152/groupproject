@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/normalize.css"/>
     <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap"/>
   </head>
   <body>
@@ -41,54 +43,132 @@
       </header>
       <!-- end header-->
       <!--content-->
-      <!--end content-->
-      <!--footer-->
-      <footer>
-        <div class="container d-flex just-cont-spase-bet">
-          <div class="footer_item d-flex just-cont-spase-bet">
-            <div class="footer_item-compani m-left-40">
-              <h6>Компания</h6>
-              <ul class="footer_item-list">
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Вакансии</a></li>
-                <li><a href="#">Акции</a></li>
-              </ul>
-            </div>
-            <div class="footer_item-info m-left-40">
-              <h6>Информация</h6>
-              <ul class="footer_item-list">
-                <li><a href="#">Условия оплаты</a></li>
-                <li><a href="#">Условия доставки</a></li>
-                <li><a href="#">Возврат товара</a></li>
-              </ul>
-            </div>
-            <div class="footer_item-programs m-left-40">
-              <h6>Программа лояльности</h6>
-              <ul class="footer_item-list">
-                <li><a href="#">Подарочные карты</a></li>
-                <li><a href="#">Обучение</a></li>
-              </ul>
-            </div>
+      <div class="index-blocks">
+        <div class="center">
+          <div class="single-item center">
+            <div class="review1"><img src="images/grand.svg" alt=""/></div>
+            <div class="review1"><img src="images/tNedel.svg" alt=""/></div>
+            <div class="review1"><img src="images/NG.svg" alt="" width="1170px" height="670px"/></div>
           </div>
-          <div class="footer_item">
-            <div class="footer_item-icon d-flex just-cont-spase-eve"><img src="./images/icon-facebook.svg" alt="facebook"/><img src="./images/icon-instagram.svg" alt="what"/><img src="./images/icon-what.svg" alt="what"/><img src="./images/icon-vk.svg" alt="vk"/></div>
-            <div class="footer_item-phone d-flex"><img src="./images/phone.svg" alt="phone"/>
-              <p><a href="tel:88002003000">8 800 200 3000</a></p>
-            </div>
-            <div class="footer_item-addres">
-              <p>г.Нижний новгород,</p>
-              <p>ул.Петрова д.38, БЦ "Богемия"</p>
+          <div class="wrap">
+            <h2>Распродажа</h2>
+            <div class="multiple-items center">
+              <div class="review"><img src="images/tarelka.svg" alt=""/>
+                <div>
+                  <p>Бульонница Дымка, 510мл</p>
+                  <p class="tysklo">
+                    <s>45 руб</s>- 5%
+                  </p>
+                  <p>40 руб</p>
+                </div>
+                <div class="btn">
+                  <button>В КОРЗИНУ</button>
+                </div>
+              </div>
+              <div class="review"><img src="images/whiteTarelka.svg" alt=""/>
+                <div>
+                  <p>Бульонница Скандинавские узоры,<br/> 13 см</p>
+                  <p class="tysklo">
+                    <s>70 руб</s> -14%
+                  </p>
+                  <p>60 руб</p>
+                </div>
+                <div class="btn5">
+                  <button>В КОРЗИНУ</button>
+                </div>
+              </div>
+              <div class="review"><img src="images/varka.svg" alt=""/>
+                <div>
+                  <p>Мультиварка S50404 Servitta, 5л</p>
+                  <p class="tysklo">
+                    <s>3500 руб</s> -25%
+                  </p>
+                  <p>3000 руб</p>
+                </div>
+                <div class="btn">
+                  <button>В КОРЗИНУ</button>
+                </div>
+              </div>
+              <div class="review"><img src="images/turka.svg" alt=""/>
+                <div>
+                  <p>ТУРКА С ДЕР/РУЧКОЙ ДЕКОР ГЛАЗУР ИВ-5227</p>
+                  <p class="tysklo">
+                    <s>600 руб</s> -50%
+                  </p>
+                  <p>300 руб</p>
+                </div>
+                <div class="btn1">
+                  <button>В КОРЗИНУ</button>
+                </div>
+              </div>
+              <div class="review"><img src="images/shaker.svg" alt=""/>
+                <div>
+                  <p>Шейкер дл я смешивания коктейля Fackelmann, 8.2х21.5см, стекло</p>
+                  <p class="tysklo"><
+                    <s>550 руб</s> -9%
+                  </p>
+                  <p>500 руб</p>
+                </div>
+                <div class="btn2">
+                  <button>В КОРЗИНУ</button>
+                </div>
+              </div>
+              <div class="review"><img src="images/blackSkovorodka.svg" alt=""/>
+                <div>
+                  <p>Сковорода Rustica Esprado 26*6,8см, кованого алюминия QuanTanium</p>
+                  <p class="tysklo">
+                    <s>1998 руб</s> -25%
+                  </p>
+                  <p>1449 руб</p>
+                </div>
+                <div class="btn3">
+                  <button>В КОРЗИНУ</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="copyright">
-          <p>made in Comanda A</p>
-          <p>2019 год</p>
+      </div>
+      <div class="news center">
+        <h2>НОВИНКИ</h2>
+        <div class="newItem">
+          <div class="block"><img src="images/skovorodka.svg" alt=""/>
+            <p>Сковорода-гриль с антипригарным покрытием, 28х28 см</p>
+            <button class="buttonOne">В КОРЗИНУ</button>
+          </div>
+          <div class="block"><img src="images/protiven.svg" alt=""/>
+            <p></p>PYREX Набор для запекания 2 предмета (противень Asimetria 35*27см+форма стеклянная 35*22см) AS35RR0/248BN
+            <button class="buttonTwo">В КОРЗИНУ</button>
+          </div>
+          <div class="block"><img src="images/castrula.svg" alt=""/>
+            <p>Кастрюля со стеклянной крышкой VITALITY, индукция, 4л</p>
+            <button class="buttonOne">В КОРЗИНУ</button>
+          </div>
         </div>
-      </footer>
-      <script src="../js/jquery-3.4.1.min.js"></script>
-      <!--end footer-->
+      </div>
     </div>
   </body>
 </html>
+<script type="text/javascript">
+  $(function() {
+      //карусель отзывов
+      $('.multiple-items').slick({
+          infinite: true,
+          dots: false,
+          //autoplay: true,
+          //autoplaySpeed: 2500,
+          slidesToShow: 3,
+          slidesToScroll: 1
+  });
+  });
+</script>
+<script type="text/javascript">
+  $(function() {
+  $('.single-item').slick();
+  });
+          
+    //end content
+    //footer
+    include blocks/footer
+    //end footer
+</script>
